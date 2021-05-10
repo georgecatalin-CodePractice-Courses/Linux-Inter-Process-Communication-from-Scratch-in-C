@@ -15,6 +15,6 @@ URL: https://www.udemy.com/course/linuxipc/
 * Design a Linux process which could harness benefits of various IPC Mechanism at the same time
 
 
-![Course Cover](/images/2021-05-10_14-16-26.png)
+![Course Cover](2021-05-10_14-16-26.png)
 
 
