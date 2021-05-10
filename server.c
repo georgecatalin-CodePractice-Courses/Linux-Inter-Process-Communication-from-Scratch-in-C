@@ -91,7 +91,7 @@ int main(int argc, char *argv[])
 
 	for (;;)
 	{
-		printf("Waiting for the accept() system call");
+		printf("Waiting for the accept() system call\n");
 
 		/* *** Next step: ACCEPT() *** */
 		data_socket=accept(connection_socket, NULL, NULL);
