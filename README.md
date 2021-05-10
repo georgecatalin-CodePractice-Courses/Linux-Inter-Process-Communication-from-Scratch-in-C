@@ -7,14 +7,12 @@ URL: https://www.udemy.com/course/linuxipc/
 
 ## Course summary:
 
-* You will be able to Design Application which require IPC
+* Design Application which require IPC
 * Choose the best IPC mechanism depending on the application requirement
 * Understand the Linux IPC programming interface
 * Understand Linux OS better and feel confident
 * Prepare for IPC based interview Questions
 * Design a Linux process which could harness benefits of various IPC Mechanism at the same time
 
-
-![Course Cover](2021-05-10_14-16-26.png)
 
 
