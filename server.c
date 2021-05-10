@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 //define the name of the Unix Domain Socket we are going to create. It must be unique on the system
-#define SOCKET_NAME " /tmp/DemoSocket"
+#define SOCKET_NAME "/tmp/DemoSocket"
 
 //define the size of the buffer the server is going to use to receive any data from the client
 #define BUFFER_SIZE 128
