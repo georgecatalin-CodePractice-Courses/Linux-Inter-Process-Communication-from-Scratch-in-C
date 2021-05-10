@@ -53,22 +53,18 @@ int main(int argc, char *argv[])
 
         //get prepared to call a bind system call: initialize the name variable 
 	memset(&name,0, sizeof(struct sockaddr_un));
-
-	//specify the credentials of the socket
-	name.sunt_family = AF_UNIX;
-	strncpy(name.sun_path, SOCKET_NAME, sizeof(name&name,0, sizeof(struct sockaddr_un));
-			
+		
 		
 	//specify the credentials of the socket
-	name.sunt_family = AF_UNIX;
-	strncpy(name.sun_path, SOCKET_NAME, sizeof(name.sun_path)-1));	//at this step we have filled in the identity of the name struct -1 because the last character in a C string array is the null character
+	name.sun_family = AF_UNIX;
+	strcpy(name.sun_path, SOCKET_NAME);
 
 	/* *** bind the socket to the socket name * ***/
 	/* The purpose of a bind system call() is that by this, the application dictates to the underlying operating system the criteria for receiving the data.
 	 * In this case, it tells that if a server sends data to the socket "/tmp/DemoSocket"  then such data needs to be delivered to this process */
 
 	/* Description of the bind() system call: 1st argument is the name of the connection socket=master socket file description, the 2nd argument is the pointer to the credential we already filled with the details of the Unix Domain Socket, the 3rd argument the size of the 2nd argument) */
-	ret= bin(connection_socket, (const struct sockaddr *) &name, sizeof(struct sockaddr_un));
+	ret= bind(connection_socket, (const struct sockaddr *) &name, sizeof(struct sockaddr_un));
 
 	if( ret == -1)
 	{
@@ -133,7 +129,7 @@ int main(int argc, char *argv[])
 			if(ret==-1)
 			{
 				perror("read() system call error");
-				exist(EXIT_FAILURE);
+				exit(EXIT_FAILURE);
 			}
 
 		        //Add received command
