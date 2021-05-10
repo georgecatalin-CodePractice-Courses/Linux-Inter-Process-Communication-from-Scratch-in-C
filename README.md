@@ -15,4 +15,6 @@ URL: https://www.udemy.com/course/linuxipc/
 * Design a Linux process which could harness benefits of various IPC Mechanism at the same time
 
 
-https://github.com/georgecatalin-CodePractice-Courses/Linux-Inter-Process-Communication-from-Scratch-in-C/blob/main/2021-05-10_14-16-26.png
+![Course Cover](/images/2021-05-10_14-16-26.png)
+
+
